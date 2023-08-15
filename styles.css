@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header  h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  color: #fff;
+  left: 100px;
+  position: absolute;
+  top: 40%;
+  opacity: 50%;
+}
+
+.header h1::before{
+  content: '\201c';
+}
+
+.header h1::after{
+  content: '\201d';
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: larger;
+  color: #fff
+}
+
+nav a:hover {
+  color: #ed335f;
+  transition: 2s;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #329efc;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media(max-width: 900px){
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 4;
+        transition: 0.5s;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    nav a {
+        font-size: small;
+        margin-top: 40px;
+    }
+
+    .header {
+      background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(background1.png);
+    }
+
+    .header h1 {
+      font-size: 50px;
+      font-weight: normal;
+      color: #fff;
+      left: 30px;
+      position: absolute;
+      top: 50%;
+      opacity: 50%;
+    }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d80c4;
+  border-radius: 10px;
+}
+
+/* -----------------------------------------------------------------Semester------------------------------------------------------------------------  */
+
+.semester {
+  background-color: #000429;
+  /* display: grid;
+  place-items: center center; */
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+}
+
+.semester h1 {
+  padding-top: 50px;
+}
+
+.semester p {
+  padding-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap: 40px;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.cards a {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(sem.jpg);
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  min-height: 500px;
+}
+
+.container{
+  position: relative;
+}
+
+.container h2 {
+  padding-top: 100px;
+}
+
+.card:hover {
+  background-image: url(sem.jpg);
+  color: black;
+}
+
+/* -----------------------------------------------------------------Footer------------------------------------------------------------------------ */
+
+.footer { 
+  width: 100%; 
+  text-align: center; 
+  padding: 30px 0; 
+  background: #2f2597; 
+  color: #fff; 
+  display: block;
+} 
+   
+
+.footer hr {
+  width: 50px;
+}
+
+.footer h4 { 
+  margin-bottom: 10px; 
+  margin-top: 20px; 
+  font-weight: 600; 
+  font-size: 20px; 
+} 
+
+.footer h4::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #329efc;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+   
+.footer p {
+  padding-bottom: 10px;
+}
+
+.icons .fa-brands{ 
+  color: #000429; 
+  margin: 0 10px; 
+  cursor: pointer; 
+  padding: 10px 0; 
+} 
+   
+.fa-heart { 
+  color: #000429; 
+} 
+   
+@media (max-width: 700px) { 
+  .footer p { 
+   font-size: 12px; 
+  } 
+
+  .footer h4::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #329efc;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+}

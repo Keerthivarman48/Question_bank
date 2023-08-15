@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-DS</title>
+    <script src="https://kit.fontawesome.com/52ee7c782a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">Department of Artificial Intelligence & Data Science</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">SEMESTER</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>We'll see who's<br>powerful now!</h1>
+    </section>
+<!-- -----------------------------------------------------------------Semester------------------------------------------------------------------------ -->
+
+    <section class="semester">
+        <h1>SEMESTER</h1>
+        <p>All the semesters have been listed below</p>
+        <div class="cards">
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 1</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 2</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 3</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 4</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 5</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 6</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 7</h2></div>
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="card">
+                    <div class="container"><h2>Semester 8</h2></div>
+                </div>
+            </a>
+        </div>
+    </section>
+<!-- -----------------------------------------------------------------Footer------------------------------------------------------------------------ -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Developed by</p>
+        <p>Keerthi Varman M  <i class="fa-solid fa-circle fa-2xs"></i>  Sabarish T K</p>
+        <div class="icons">
+            <i class="fa-brands fa-square-facebook"></i> 
+            <i class="fa-brands fa-instagram"></i> 
+            <i class="fa-brands fa-square-twitter"></i> 
+            <i class="fa-brands fa-linkedin"></i> 
+        </div>
+        <p>@2023 <i class="fa-solid fa-heart"></i> AI&DS</p> 
+    </section>
+
+<!-- -----------------------------------------------------------------Script------------------------------------------------------------------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
